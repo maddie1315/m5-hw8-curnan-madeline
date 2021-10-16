@@ -54,3 +54,66 @@ p {
 #box-3 {
   background-color: var(--box-color-3);
 }
+
+/* Tablet breakpoint */
+@media (min-width: 600px) {
+  h1 {
+    margin: 6% auto;
+  }
+
+  p {
+    font-size: 1.8em;
+    margin-bottom: 2%;
+  }
+
+  .boxes {
+    display: flex;
+    margin: 0 5%;
+  }
+
+  .box {
+    border: var(--primary-color) 10px solid;
+    width: 15%;
+    padding: 2% 1%;
+    font-size: 3em;
+  }
+}
+
+/* Laptop breakpoint */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 5em;
+    margin: 4% auto;
+  }
+
+  p {
+    font-size: 2em;
+    margin: 2% 0 1% 0;
+  }
+
+  .box {
+    border: var(--primary-color) 15px solid;
+    width: 18%;
+    padding: 4% 1%;
+    font-size: 5em;
+  }
+}
+
+@media (min-width: 1366px) {
+  h1 {
+    margin: 2% auto;
+  }
+
+  .boxes {
+    margin: 0 18%;
+  }
+
+  .box {
+    width: 12%;
+    padding: 2% 4%;
+    font-size: 6em;
+  }
+}
+
+
+/* Desktop breakpoint */

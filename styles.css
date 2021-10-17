@@ -26,7 +26,7 @@ h1 {
   color: var(--white);
 }
 
-p {
+p, .score {
   color: var(--primary-color);
   font-size: 1.4em;
   margin: 5%;
@@ -55,13 +55,20 @@ p {
   background-color: var(--box-color-3);
 }
 
+.score {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: 3% auto;
+}
+
 /* Tablet breakpoint */
 @media (min-width: 600px) {
   h1 {
     margin: 6% auto;
   }
 
-  p {
+  p, .score {
     font-size: 1.8em;
     margin-bottom: 2%;
   }
@@ -77,6 +84,10 @@ p {
     padding: 2% 1%;
     font-size: 3em;
   }
+
+  .score {
+    width: 30%;
+  }
 }
 
 /* Laptop breakpoint */
@@ -86,7 +97,7 @@ p {
     margin: 4% auto;
   }
 
-  p {
+  p, .score {
     font-size: 2em;
     margin: 2% 0 1% 0;
   }
@@ -96,6 +107,11 @@ p {
     width: 18%;
     padding: 4% 1%;
     font-size: 5em;
+  }
+
+  .score {
+    width: 25%;
+    margin: 2% auto;
   }
 }
 
@@ -115,11 +131,17 @@ p {
   }
 }
 
+
 /* Desktop breakpoint */
 @media (min-width: 1920px) {
   .box {
     width: 15%;
     font-size: 11em;
+  }
+
+  .score {
+    width: 15%;
+    margin: 3% auto;
   }
 }
 
@@ -137,5 +159,10 @@ p {
   .box {
     width: 13%;
     font-size: 14em;
+  }
+
+  .score {
+    font-size: 2.7em;
+    margin: 1% auto;
   }
 }

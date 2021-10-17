@@ -19,9 +19,6 @@ lossElement.textContent = 'Losses: ' + lossCount++;
 
 // create a random number between 1-3 and store it to a variable
 // This number will represent the winning box
-var winningNum = Math.floor((Math.random() * 3) + 1);
-console.log(winningNum);
-
 // target all .box elements and attach a click event listener to each one using a loop
 // within each click event...
 // determine which box was clicked with 'this.textContent' or event.target.textContent
@@ -33,6 +30,7 @@ for (let i = 0; i < boxElements.length; i++) {
     boxElement.onclick = function(event) {
         var boxNumberWasClicked = event.target.textContent;
         console.log(parseInt(boxNumberWasClicked, 10));
+        var winningNum = Math.floor((Math.random() * 3) + 1);
         if (winningNum == boxNumberWasClicked) {
             messageElement.textContent = 'congrats, you won!',
             winElement.textContent = 'Wins: ' + winCount++;
